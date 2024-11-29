@@ -1,0 +1,9 @@
+{
+	"name": "pttrainingdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c4371841-acf1-44c2-a1da-cc017fb08c28",
+		"tenantId": "6031968f-1fb4-4ed6-bedb-9ed0a197926c"
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ptdbtraining",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "c1.json",
+				"folderPath": "adftraining",
+				"container": "ptcontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"event_time": {
+					"type": "string"
+				},
+				"country_name": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

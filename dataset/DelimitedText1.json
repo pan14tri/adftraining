@@ -1,0 +1,137 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "navalblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Crime_Data_from_2020_to_Present.csv",
+				"container": "rawfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "DR_NO",
+				"type": "String"
+			},
+			{
+				"name": "Date Rptd",
+				"type": "String"
+			},
+			{
+				"name": "DATE OCC",
+				"type": "String"
+			},
+			{
+				"name": "TIME OCC",
+				"type": "String"
+			},
+			{
+				"name": "AREA",
+				"type": "String"
+			},
+			{
+				"name": "AREA NAME",
+				"type": "String"
+			},
+			{
+				"name": "Rpt Dist No",
+				"type": "String"
+			},
+			{
+				"name": "Part 1-2",
+				"type": "String"
+			},
+			{
+				"name": "Crm Cd",
+				"type": "String"
+			},
+			{
+				"name": "Crm Cd Desc",
+				"type": "String"
+			},
+			{
+				"name": "Mocodes",
+				"type": "String"
+			},
+			{
+				"name": "Vict Age",
+				"type": "String"
+			},
+			{
+				"name": "Vict Sex",
+				"type": "String"
+			},
+			{
+				"name": "Vict Descent",
+				"type": "String"
+			},
+			{
+				"name": "Premis Cd",
+				"type": "String"
+			},
+			{
+				"name": "Premis Desc",
+				"type": "String"
+			},
+			{
+				"name": "Weapon Used Cd",
+				"type": "String"
+			},
+			{
+				"name": "Weapon Desc",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "Status Desc",
+				"type": "String"
+			},
+			{
+				"name": "Crm Cd 1",
+				"type": "String"
+			},
+			{
+				"name": "Crm Cd 2",
+				"type": "String"
+			},
+			{
+				"name": "Crm Cd 3",
+				"type": "String"
+			},
+			{
+				"name": "Crm Cd 4",
+				"type": "String"
+			},
+			{
+				"name": "LOCATION",
+				"type": "String"
+			},
+			{
+				"name": "Cross Street",
+				"type": "String"
+			},
+			{
+				"name": "LAT",
+				"type": "String"
+			},
+			{
+				"name": "LON",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
